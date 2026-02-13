@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pamela Eunice A. Valdez">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="registrationForm"action="action_page.php" method="POST">
+
+        <h2>Student Registration Form</h2>
+        <p>Fill in the form to create a Record</p>
+        <hr>
+
+        <div>
+            <label for="name"><b>NAME</b></label>
+            <input type="text" placeholder="First Name" name="fName" id="fName" required>
+            <input type="text" placeholder="Middle Name" name="mName" id="mName">
+            <input type="text" placeholder="Last Name" name="lName" id="lName" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="course"><b>COURSE</b></label>
+            <select name="course" id="course" required>
+                <option value="default" disabled selected>Select Course</option>
+                <option value="BSIT">BS Information Technology</option>
+                <option value="BSIS">BS Information Systems</option>
+                <option value="BSCS">BS Computer Science</option>
+                <option value="BSCpE">BS Computer Engineering</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="sex"><b>GENDER</b></label>
+            <select name="Gender" id="gender" required>
+                <option value="default" disabled selected>Select Gender</option>
+                <option value="BSIT">Male</option>
+                <option value="BSIS">Female</option>
+                <option value="BSCS">Prefer Not Say</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <b>BIRTH DATE</b>
+            <input type="date">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email"><b>PERSONAL EMAIL</b></label>
+            <input type="email" placeholder="example@gmail.com" name="Email" id="Email" required>
+
+            <br>
+
+            <label for="contact"><b>CONTACT NUMBER</b></label>
+            <input type="number" placeholder="+63XXXXXXXXXX" name="contact" id="contact" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="passw"><b>PASSWORD</b></label>
+            <input type="password" placeholder="New password" name="passw" id="passw" maxlength="20" required>
+
+            <br>
+
+            <label for="passw"><b>RE-ENTER PASSWORD</b></label>
+            <input type="password" placeholder="Re-enter password" name="repassw" id="repassw" maxlength="20" required>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset">
+            <input type="submit">
+        </div>
+
+    </div>
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
